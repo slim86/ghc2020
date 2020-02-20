@@ -4,6 +4,8 @@ import java.util.List;
 
 public class Librairie {
 
+	private String idx;
+	
 	private List<Livre> listeLivres;
 	
 	private List<String> listeIndexLivres;
@@ -15,6 +17,14 @@ public class Librairie {
 	private int capaciteTraitement;
 	
 	private int nbLivres;
+
+	public String getIdx() {
+		return idx;
+	}
+
+	public void setIdx(String idx) {
+		this.idx = idx;
+	}
 
 	public Librairie() {
 		
@@ -70,9 +80,9 @@ public class Librairie {
 
 	@Override
 	public String toString() {
-		return "Librairie [listeLivres=" + listeLivres + ", listeIndexLivres="
-				+ listeIndexLivres + ", ouvert=" + ouvert
-				+ ", nbJoursOuverture=" + nbJoursOuverture
+		return "Librairie [idx=" + idx + ", listeLivres=" + listeLivres
+				+ ", listeIndexLivres=" + listeIndexLivres + ", ouvert="
+				+ ouvert + ", nbJoursOuverture=" + nbJoursOuverture
 				+ ", capaciteTraitement=" + capaciteTraitement + ", nbLivres="
 				+ nbLivres + "]";
 	}

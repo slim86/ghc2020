@@ -1,5 +1,7 @@
 package fr.soprasteria.hashcode.indigogo.model;
 
+import java.util.List;
+
 public class Context {
 
 	@Override
@@ -13,6 +15,8 @@ public class Context {
 	private int nbLivres;
 	
 	private int nbLibrairies;
+	
+	private List<Librairie> librairies;
 
 	public Context() {
 		
@@ -40,6 +44,14 @@ public class Context {
 
 	public void setNbLibrairies(int nbLibrairies) {
 		this.nbLibrairies = nbLibrairies;
+	}
+
+	public List<Librairie> getLibrairies() {
+		return librairies;
+	}
+
+	public void setLibrairies(List<Librairie> librairies) {
+		this.librairies = librairies;
 	}
 	
 	

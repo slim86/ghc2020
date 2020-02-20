@@ -1,4 +1,4 @@
-package fr.soprasteria.hashcode.bean;
+package fr.soprasteria.hashcode.yt.bean;
 
 import java.util.ArrayList;
 import java.util.HashSet;

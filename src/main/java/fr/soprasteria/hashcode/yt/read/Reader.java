@@ -1,4 +1,4 @@
-package fr.soprasteria.hashcode.read;
+package fr.soprasteria.hashcode.yt.read;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -12,13 +12,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import fr.soprasteria.hashcode.bean.Cache;
-import fr.soprasteria.hashcode.bean.CacheEndPoint;
-import fr.soprasteria.hashcode.bean.Endpoint;
-import fr.soprasteria.hashcode.bean.Entrant;
-import fr.soprasteria.hashcode.bean.Params;
-import fr.soprasteria.hashcode.bean.ScoreVideo;
-import fr.soprasteria.hashcode.bean.Video;
+import fr.soprasteria.hashcode.yt.bean.Cache;
+import fr.soprasteria.hashcode.yt.bean.CacheEndPoint;
+import fr.soprasteria.hashcode.yt.bean.Endpoint;
+import fr.soprasteria.hashcode.yt.bean.Entrant;
+import fr.soprasteria.hashcode.yt.bean.Params;
+import fr.soprasteria.hashcode.yt.bean.ScoreVideo;
+import fr.soprasteria.hashcode.yt.bean.Video;
 
 public class Reader {
 

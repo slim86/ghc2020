@@ -1,4 +1,4 @@
-package fr.soprasteria.hashcode.bean;
+package fr.soprasteria.hashcode.yt.bean;
 
 import java.util.HashMap;
 import java.util.Map;

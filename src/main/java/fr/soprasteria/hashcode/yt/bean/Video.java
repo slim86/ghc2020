@@ -1,4 +1,4 @@
-package fr.soprasteria.hashcode.bean;
+package fr.soprasteria.hashcode.yt.bean;
 
 public class Video {
 	private String id;

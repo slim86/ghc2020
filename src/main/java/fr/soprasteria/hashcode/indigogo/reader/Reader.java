@@ -50,7 +50,7 @@ public final class Reader {
 			}
 			
 			final List<Librairie> listeLibrairie = new ArrayList<Librairie>();
-			for (int idxLibrairie = 0; idxLibrairie < lines.size() - 3; idxLibrairie++) {
+			for (int idxLibrairie = 0; idxLibrairie < ((ctxt.getNbLibrairies() *2)); idxLibrairie++) {
 				final String[] infosLibrairie = lines.get(idxLibrairie + 2).split(" ");
 				final Librairie librairie = new Librairie();
 				librairie.setNbLivres(Integer.parseInt(infosLibrairie[0]));
@@ -60,6 +60,7 @@ public final class Reader {
 				final String[] infosLibrairieIdxLivres = lines.get(idxLibrairie + 3).split(" ");
 				librairie.setListeIndexLivres(Arrays.asList(infosLibrairieIdxLivres));
 				listeLibrairie.add(librairie);
+				idxLibrairie = idxLibrairie + 1;
 			}
 			
 			System.out.println("Liste des librairies :");

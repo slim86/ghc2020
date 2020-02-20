@@ -9,12 +9,16 @@ import java.util.stream.Collectors;
 
 public final class Reader {
 
-	public static void read(String fileName) {
+	private static final String IN_EXTENTION = ".in";
+	
+	public static void read(final String fileName) {
+		
+		final String fileNameWithExtension = fileName + IN_EXTENTION;
 
-		System.out.println("Lecture du fichier " + fileName);
+		System.out.println("Lecture du fichier " + fileNameWithExtension);
 		List<String> lines;
 
-		try (BufferedReader br = Files.newBufferedReader(Paths.get(fileName))) {
+		try (BufferedReader br = Files.newBufferedReader(Paths.get(fileNameWithExtension))) {
 
 			// line 0
 			lines = br.lines().collect(Collectors.toList());

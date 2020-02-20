@@ -18,11 +18,17 @@ public final class Reader {
 
 			// line 0
 			lines = br.lines().collect(Collectors.toList());
+			System.out.println("Nombre de lignes : "
+					+ lines.size());
 
 			String[] infosFirstLine = lines.get(0).split(" ");
-
-			System.out.println("Nombre de lignes : "
-					+ infosFirstLine.length);
+			StringBuffer firstLine = new StringBuffer();
+			firstLine.append("Premiere ligne : ");
+			for (String s : infosFirstLine) {
+				firstLine.append(s);
+				firstLine.append(" ");
+			}
+			System.out.println(firstLine);
 
 		} catch (IOException e) {
 			e.printStackTrace();

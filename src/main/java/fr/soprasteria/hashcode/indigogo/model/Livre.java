@@ -2,7 +2,7 @@ package fr.soprasteria.hashcode.indigogo.model;
 
 public class Livre {
 
-	private int id;
+	private String id;
 	
 	private int score;
 
@@ -10,11 +10,11 @@ public class Livre {
 		
 	}
 	
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -24,6 +24,11 @@ public class Livre {
 
 	public void setScore(int score) {
 		this.score = score;
+	}
+
+	@Override
+	public String toString() {
+		return "Livre [id=" + id + ", score=" + score + "]";
 	}
 	
 	

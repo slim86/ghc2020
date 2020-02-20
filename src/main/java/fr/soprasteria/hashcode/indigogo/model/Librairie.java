@@ -6,9 +6,15 @@ public class Librairie {
 
 	private List<Livre> listeLivres;
 	
+	private List<String> listeIndexLivres;
+	
 	private boolean ouvert;
 	
 	private int nbJoursOuverture;
+	
+	private int capaciteTraitement;
+	
+	private int nbLivres;
 
 	public Librairie() {
 		
@@ -38,5 +44,37 @@ public class Librairie {
 		this.nbJoursOuverture = nbJoursOuverture;
 	}
 	
+	public int getCapaciteTraitement() {
+		return capaciteTraitement;
+	}
+
+	public void setCapaciteTraitement(int capaciteTraitement) {
+		this.capaciteTraitement = capaciteTraitement;
+	}
+
+	public int getNbLivres() {
+		return nbLivres;
+	}
+
+	public void setNbLivres(int nbLivres) {
+		this.nbLivres = nbLivres;
+	}
+
+	public List<String> getListeIndexLivres() {
+		return listeIndexLivres;
+	}
+
+	public void setListeIndexLivres(List<String> listeIndexLivres) {
+		this.listeIndexLivres = listeIndexLivres;
+	}
+
+	@Override
+	public String toString() {
+		return "Librairie [listeLivres=" + listeLivres + ", listeIndexLivres="
+				+ listeIndexLivres + ", ouvert=" + ouvert
+				+ ", nbJoursOuverture=" + nbJoursOuverture
+				+ ", capaciteTraitement=" + capaciteTraitement + ", nbLivres="
+				+ nbLivres + "]";
+	}
 	
 }

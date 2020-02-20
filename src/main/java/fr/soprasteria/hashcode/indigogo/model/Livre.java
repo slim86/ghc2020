@@ -6,7 +6,7 @@ public class Livre {
 	
 	private int score;
 	
-	private String idLivre;
+	private String idLibrairie;
 	
 	private int jourTraite;
 
@@ -30,12 +30,12 @@ public class Livre {
 		this.score = score;
 	}
 
-	public String getIdLivre() {
-		return idLivre;
+	public String getIdLibrairie() {
+		return idLibrairie;
 	}
 
-	public void setIdLivre(String idLivre) {
-		this.idLivre = idLivre;
+	public void setIdLibrairie(String idLibrairie) {
+		this.idLibrairie = idLibrairie;
 	}
 
 	public int getJourTraite() {

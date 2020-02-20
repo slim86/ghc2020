@@ -6,9 +6,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
-import fr.soprasteria.hashcode.asteam.model.Ride;
 import fr.soprasteria.hashcode.indigogo.model.Context;
 import fr.soprasteria.hashcode.indigogo.model.Librairie;
+import fr.soprasteria.hashcode.indigogo.model.Livre;
 
 public final class Writer {
 
@@ -34,8 +34,8 @@ public final class Writer {
 				bufferedWriter
 						.write(String.valueOf(librarie.getIdx() + " " + librarie.getListeIndexLivres().size()));
 				bufferedWriter.newLine();
-				for (String indexLivre : librarie.getListeIndexLivres()) {
-					bufferedWriter.write(indexLivre + " ");
+				for (Livre livre : librarie.getListeLivres()) {
+					bufferedWriter.write(livre.getId() + " ");
 				}
 				bufferedWriter.newLine();
 			}

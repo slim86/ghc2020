@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+extraProperties=sonar.login\=xxxx\r\nsonar.host.url\=http\://sonar.slnxasipforge01.ptx.fr.sopra/sonar\r\nsonar.jdbc.driver\=org.postgresql.Driver\r\nsonar.jdbc.password\=sonar\r\nsonar.jdbc.url\=jdbc\:mysql\://FORGE-Qualim01.asip.hst.fluxus.net\:3306\r\nsonar.password\=xxxx\r\nsonar.jdbc.username\=sonar
+projectKey=fr.soprasteria\:hashcode
+serverUrl=http\://localhost\:9000
+version=2

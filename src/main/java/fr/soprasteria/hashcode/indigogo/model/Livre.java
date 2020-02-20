@@ -5,6 +5,10 @@ public class Livre {
 	private String id;
 	
 	private int score;
+	
+	private String idLivre;
+	
+	private int jourTraite;
 
 	public Livre() {
 		
@@ -24,6 +28,22 @@ public class Livre {
 
 	public void setScore(int score) {
 		this.score = score;
+	}
+
+	public String getIdLivre() {
+		return idLivre;
+	}
+
+	public void setIdLivre(String idLivre) {
+		this.idLivre = idLivre;
+	}
+
+	public int getJourTraite() {
+		return jourTraite;
+	}
+
+	public void setJourTraite(int jourTraite) {
+		this.jourTraite = jourTraite;
 	}
 
 	@Override

@@ -18,7 +18,7 @@ import fr.soprasteria.hashcode.indigogo.model.Livre;
 
 public final class Reader {
 
-	private static final String IN_EXTENTION = ".in";
+	private static final String IN_EXTENTION = ".txt";
 	
 	public static Context read(final String fileName) {
 		
@@ -44,7 +44,7 @@ public final class Reader {
 			System.out.println(ctxt);
 			
 			// line 1
-			List<Livre> listeLivres = new ArrayList<Livre>();
+			Map<String,Livre> listeLivres = new HashMap<String,Livre>();
 			String[] scoreLivres = lines.get(1).split(" ");
 			int idxLivre = 0;
 			Map<String, Integer> mapScore = new HashMap<String, Integer>();
@@ -52,7 +52,7 @@ public final class Reader {
 				final Livre livre = new Livre();
 				livre.setId(Integer.toString(idxLivre));
 				livre.setScore(Integer.parseInt(scoreLivre));
-				listeLivres.add(livre);
+				listeLivres.put(livre.getId(),livre);
 				mapScore.put(Integer.toString(idxLivre), Integer.parseInt(scoreLivre));
 				idxLivre++;
 			}
@@ -69,6 +69,10 @@ public final class Reader {
 				
 				final String[] infosLibrairieIdxLivres = lines.get(idxLibrairie + 3).split(" ");
 				librairie.setListeIndexLivres(Arrays.asList(infosLibrairieIdxLivres));
+				librairie.setListeLivres(new ArrayList<Livre>());
+				for(String idLivre : librairie.getListeIndexLivres()) {
+					librairie.getListeLivres().add(listeLivres.get(idLivre));
+				}
 				listeLibrairie.add(librairie);
 				idxLibrairie++;
 				index++;

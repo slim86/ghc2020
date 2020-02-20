@@ -32,7 +32,7 @@ public final class Writer {
 
 			for (Librairie librarie : context.getLibrairies()) {
 				bufferedWriter
-						.write(String.valueOf(librarie.getIdx() + " " + librarie.getListeIndexLivres().size()));
+						.write(String.valueOf(librarie.getIdx() + " " + librarie.getListeLivres().size()));
 				bufferedWriter.newLine();
 				for (Livre livre : librarie.getListeLivres()) {
 					bufferedWriter.write(livre.getId() + " ");
